@@ -1,37 +1,122 @@
-const topButton = document.querySelector("#topButton");
-const copyCodeButton = document.querySelector("#copyCodeBtn");
-const profileCode = document.querySelector("#profileCode");
+const root = document.documentElement;
+const tabs = Array.from(document.querySelectorAll('[data-page]'));
+const cards = Array.from(document.querySelectorAll('[data-guide-page]'));
+const guideGrid = document.querySelector('.guide-grid');
+const zoomButtons = Array.from(document.querySelectorAll('[data-zoom]'));
+const modal = document.querySelector('[data-modal]');
+const modalImage = document.querySelector('[data-modal-image]');
+const openImageButtons = Array.from(document.querySelectorAll('[data-open-image]'));
+const closeModalButton = document.querySelector('[data-close-modal]');
+const copyUrlButton = document.querySelector('[data-copy-url]');
+const copyProfileCodeButton = document.querySelector('[data-copy-profile-code]');
+const profileCode = document.querySelector('#profileCode');
+const toast = document.querySelector('[data-toast]');
 
-window.addEventListener("scroll", () => {
-  if (!topButton) return;
-  topButton.classList.toggle("is-visible", window.scrollY > 480);
-});
+let zoom = 1;
 
-topButton?.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
+function setView(page) {
+  if (!guideGrid) return;
+  tabs.forEach((tab) => tab.classList.toggle('is-active', tab.dataset.page === page));
+  guideGrid.dataset.view = page;
 
-copyCodeButton?.addEventListener("click", async () => {
-  if (!profileCode) return;
+  cards.forEach((card) => {
+    const shouldShow = page === 'all' || card.dataset.guidePage === page;
+    card.hidden = !shouldShow;
+  });
+}
 
-  const text = profileCode.textContent.trim();
+function setZoom(nextZoom) {
+  zoom = Math.min(2.2, Math.max(0.75, Number(nextZoom.toFixed(2))));
+  root.style.setProperty('--zoom', zoom);
 
-  if (!text || text.includes("여기에")) {
-    copyCodeButton.textContent = "코드 입력 필요";
-    setTimeout(() => {
-      copyCodeButton.textContent = "코드 복사";
-    }, 1400);
-    return;
-  }
+  const resetButton = document.querySelector('[data-zoom="reset"]');
+  if (resetButton) resetButton.textContent = `${Math.round(zoom * 100)}%`;
+}
 
+function showToast(message) {
+  if (!toast) return;
+  toast.textContent = message;
+  toast.hidden = false;
+  clearTimeout(showToast.timer);
+  showToast.timer = setTimeout(() => {
+    toast.hidden = true;
+  }, 1600);
+}
+
+async function copyText(text, successMessage) {
   try {
     await navigator.clipboard.writeText(text);
-    copyCodeButton.textContent = "복사 완료!";
+    showToast(successMessage);
   } catch (error) {
-    copyCodeButton.textContent = "직접 복사";
+    showToast('복사에 실패했어요. 직접 드래그해서 복사해 주세요.');
   }
+}
 
-  setTimeout(() => {
-    copyCodeButton.textContent = "코드 복사";
-  }, 1400);
+tabs.forEach((tab) => {
+  tab.addEventListener('click', () => setView(tab.dataset.page));
 });
+
+zoomButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const action = button.dataset.zoom;
+    if (action === 'in') setZoom(zoom + 0.15);
+    if (action === 'out') setZoom(zoom - 0.15);
+    if (action === 'reset') setZoom(1);
+  });
+});
+
+openImageButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    if (!modal || !modalImage) return;
+    modalImage.src = button.dataset.openImage;
+    if (typeof modal.showModal === 'function') {
+      modal.showModal();
+    } else {
+      window.open(button.dataset.openImage, '_blank', 'noopener');
+    }
+  });
+});
+
+if (closeModalButton && modal) {
+  closeModalButton.addEventListener('click', () => modal.close());
+}
+
+if (modal) {
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) modal.close();
+  });
+}
+
+if (copyUrlButton) {
+  copyUrlButton.addEventListener('click', () => {
+    copyText(window.location.href, '페이지 주소를 복사했어요.');
+  });
+}
+
+if (copyProfileCodeButton && profileCode) {
+  copyProfileCodeButton.addEventListener('click', () => {
+    const code = profileCode.textContent.trim();
+    if (!code || code.includes('여기에')) {
+      showToast('아직 프로필 코드가 입력되지 않았어요.');
+      return;
+    }
+    copyText(code, '프로필 코드를 복사했어요.');
+  });
+}
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === '1') setView('1');
+  if (event.key === '2') setView('2');
+  if (event.key.toLowerCase() === 'a') setView('all');
+  if ((event.ctrlKey || event.metaKey) && event.key === '=') {
+    event.preventDefault();
+    setZoom(zoom + 0.15);
+  }
+  if ((event.ctrlKey || event.metaKey) && event.key === '-') {
+    event.preventDefault();
+    setZoom(zoom - 0.15);
+  }
+});
+
+setView('1');
+setZoom(1);
