@@ -1,0 +1,1059 @@
+{
+  "mods": [
+    {
+      "id": "denikson-BepInExPack_Valheim",
+      "display": "BepInExPack Valheim",
+      "category": "필수/의존성",
+      "tags": [
+        "필수",
+        "로더"
+      ],
+      "iconUrl": "https://gcdn.thunderstore.io/live/repository/icons/denikson-BepInExPack_Valheim-5.4.2333.png.128x128_q95.png",
+      "link": "https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/",
+      "desc": "발헤임 모드를 불러오기 위한 기본 모드 로더입니다.",
+      "effect": "일반 유저가 직접 건드릴 설정은 거의 없습니다. 다른 모드들이 정상적으로 로드되는 기반입니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "BepInEx.cfg"
+        ],
+        [
+          "로그",
+          "콘솔/디스크 로그 활성화"
+        ],
+        [
+          "유저 안내",
+          "프로필에 포함되어 있으면 별도 조작 불필요"
+        ]
+      ]
+    },
+    {
+      "id": "ValheimModding-Jotunn",
+      "display": "Jotunn",
+      "category": "필수/의존성",
+      "tags": [
+        "의존성",
+        "라이브러리"
+      ],
+      "iconUrl": "https://gcdn.thunderstore.io/live/repository/icons/ValheimModding-Jotunn-2.24.3.png.128x128_q95.png",
+      "link": "https://thunderstore.io/c/valheim/p/ValheimModding/Jotunn/",
+      "desc": "여러 발헤임 모드가 공통으로 사용하는 모딩 라이브러리입니다.",
+      "effect": "기능 모드가 요구하는 기반 라이브러리입니다. 유저가 직접 조작할 기능은 거의 없습니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "별도 주요 설정 없음"
+        ],
+        [
+          "유저 안내",
+          "프로필에 포함되어 있으면 그대로 유지"
+        ]
+      ]
+    },
+    {
+      "id": "ValheimModding-YamlDotNet",
+      "display": "YamlDotNet",
+      "category": "필수/의존성",
+      "tags": [
+        "의존성",
+        "YAML"
+      ],
+      "iconUrl": "https://gcdn.thunderstore.io/live/repository/icons/ValheimModding-YamlDotNet-16.3.1.png.128x128_q95.png",
+      "link": "https://thunderstore.io/c/valheim/p/ValheimModding/YamlDotNet/",
+      "desc": "YAML 설정 파일을 읽는 데 필요한 의존성 모드입니다.",
+      "effect": "Custom Raids, Azu 계열 YAML 설정을 읽기 위한 보조 구성요소입니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "별도 주요 설정 없음"
+        ],
+        [
+          "유저 안내",
+          "삭제하면 YAML 기반 모드가 깨질 수 있음"
+        ]
+      ]
+    },
+    {
+      "id": "Azumatt-AzuCraftyBoxes",
+      "display": "AzuCraftyBoxes",
+      "category": "제작/보관",
+      "tags": [
+        "제작",
+        "상자",
+        "QoL"
+      ],
+      "iconUrl": "https://gcdn.thunderstore.io/live/repository/icons/Azumatt-AzuCraftyBoxes-1.8.14.png.128x128_q95.png",
+      "link": "https://thunderstore.io/c/valheim/p/Azumatt/AzuCraftyBoxes/",
+      "desc": "제작/건축 시 주변 상자의 재료를 자동으로 참조합니다.",
+      "effect": "재료를 손에 들고 있지 않아도 20m 범위의 보관함 재료를 사용해 제작할 수 있습니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "Azumatt.AzuCraftyBoxes.cfg / .yml"
+        ],
+        [
+          "서버 설정 잠금",
+          "On"
+        ],
+        [
+          "모드 활성화",
+          "On"
+        ],
+        [
+          "상자 참조 범위",
+          "Container Range = 20"
+        ],
+        [
+          "재료 1개 남기기",
+          "Leave One Item = On"
+        ],
+        [
+          "재료 끌어오기 방지 토글",
+          "Alt + O"
+        ],
+        [
+          "Fill All 보조키",
+          "LeftShift"
+        ]
+      ]
+    },
+    {
+      "id": "Azumatt-AzuAutoStore",
+      "display": "AzuAutoStore",
+      "category": "제작/보관",
+      "tags": [
+        "정리",
+        "상자",
+        "자동보관"
+      ],
+      "iconUrl": "https://gcdn.thunderstore.io/live/repository/icons/Azumatt-AzuAutoStore-3.0.14.png.128x128_q95.png",
+      "link": "https://thunderstore.io/c/valheim/p/Azumatt/AzuAutoStore/",
+      "desc": "떨어진 아이템 또는 인벤토리 아이템을 주변 상자로 자동 정리합니다.",
+      "effect": "마침표(.)로 주변 5m 상자에 빠르게 보관하고, 이미 같은 아이템이 있는 상자 위주로 정리됩니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "Azumatt.AzuAutoStore.cfg / .yml"
+        ],
+        [
+          "서버 설정 잠금",
+          "On"
+        ],
+        [
+          "드롭 아이템 자동 수집",
+          "Chests Pickup From Ground = On"
+        ],
+        [
+          "기존 아이템 있는 상자 기준",
+          "Must Have Existing Item To Pull = On"
+        ],
+        [
+          "수동 보관 범위",
+          "Player Range = 5"
+        ],
+        [
+          "기본 상자 범위",
+          "Fallback Range = 10"
+        ],
+        [
+          "핫바/퀵슬롯 제외",
+          "둘 다 On"
+        ],
+        [
+          "자동 체크 주기",
+          "10초"
+        ],
+        [
+          "전체 보관 단축키",
+          "Period(.)"
+        ],
+        [
+          "단일 아이템 보관",
+          "Mouse2"
+        ],
+        [
+          "보관 일시정지",
+          "Shift + Period"
+        ],
+        [
+          "상자 검색 보조키",
+          "Y"
+        ],
+        [
+          "즐겨찾기 보조키",
+          "Z"
+        ]
+      ]
+    },
+    {
+      "id": "Goldenrevolver-Quick_Stack_Store_Sort_Trash_Restock",
+      "display": "Quick Stack Store Sort Trash Restock",
+      "category": "제작/보관",
+      "tags": [
+        "정리",
+        "재보충",
+        "휴지통"
+      ],
+      "link": "https://thunderstore.io/c/valheim/p/Goldenrevolver/Quick_Stack_Store_Sort_Trash_Restock/",
+      "desc": "빠른 보관, 재보충, 정렬, 휴지통 기능을 묶은 인벤토리 편의 모드입니다.",
+      "effect": "P로 주변 10m 빠른 보관, L로 소모품/탄약 재보충, O로 정렬, Delete로 버리기 UI를 사용할 수 있습니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "goldenrevolver.quick_stack_store.cfg"
+        ],
+        [
+          "빠른 보관 범위",
+          "QuickStackToNearbyRange = 10"
+        ],
+        [
+          "빠른 보관 단축키",
+          "P"
+        ],
+        [
+          "핫바 보관 제외",
+          "QuickStackIncludesHotkeyBar = false"
+        ],
+        [
+          "재보충 범위",
+          "RestockFromNearbyRange = 10"
+        ],
+        [
+          "재보충 단축키",
+          "L"
+        ],
+        [
+          "재보충 대상",
+          "탄약/소모품만"
+        ],
+        [
+          "정렬 단축키",
+          "O"
+        ],
+        [
+          "정렬 기준",
+          "Type / 오름차순"
+        ],
+        [
+          "휴지통 UI",
+          "On"
+        ],
+        [
+          "휴지통 키",
+          "Delete"
+        ],
+        [
+          "Quick Trash 확인창",
+          "On"
+        ]
+      ]
+    },
+    {
+      "id": "Azumatt-Recycle_N_Reclaim",
+      "display": "Recycle N Reclaim",
+      "category": "제작/보관",
+      "tags": [
+        "분해",
+        "재활용",
+        "회수"
+      ],
+      "iconUrl": "https://gcdn.thunderstore.io/live/repository/icons/Azumatt-Recycle_N_Reclaim-1.3.14.png.128x128_q95.png",
+      "link": "https://thunderstore.io/c/valheim/p/Azumatt/Recycle_N_Reclaim/",
+      "desc": "아이템을 재활용하거나 제작 재료 일부를 회수할 수 있습니다.",
+      "effect": "회수 탭/컨테이너 회수를 통해 제작 재료의 50%를 돌려받습니다. 인벤토리 직접 재활용은 관리자 잠금입니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "Azumatt.Recycle_N_Reclaim.cfg / ExcludeLists.yml"
+        ],
+        [
+          "인벤토리 재활용",
+          "Enabled = On / Lock to Admin = On"
+        ],
+        [
+          "회수율",
+          "RecyclingRate = 0.5"
+        ],
+        [
+          "정확한 제작대 필요",
+          "RequireExactCraftingStationForRecycling = On"
+        ],
+        [
+          "알 수 없는 레시피 회수",
+          "Off"
+        ],
+        [
+          "최소 1개 자원 반환",
+          "On"
+        ],
+        [
+          "장비/핫바 보호",
+          "Hide equipped items / Ignore hotbar = On"
+        ],
+        [
+          "되돌리기",
+          "Ctrl + Z, 20초"
+        ]
+      ]
+    },
+    {
+      "id": "Azumatt-AzuAreaRepair",
+      "display": "AzuAreaRepair",
+      "category": "제작/보관",
+      "tags": [
+        "수리",
+        "건축",
+        "QoL"
+      ],
+      "iconUrl": "https://gcdn.thunderstore.io/live/repository/icons/Azumatt-AzuAreaRepair-1.1.6.png.128x128_q95.png",
+      "link": "https://thunderstore.io/c/valheim/p/Azumatt/AzuAreaRepair/",
+      "desc": "망치 수리 기능을 범위 수리로 확장합니다.",
+      "effect": "망치로 수리할 때 주변 15m 구조물을 함께 수리해 기지 보수가 빨라집니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "Azumatt.AzuAreaRepair.cfg"
+        ],
+        [
+          "서버 설정 잠금",
+          "On"
+        ],
+        [
+          "범위 수리",
+          "On"
+        ],
+        [
+          "수리 반경",
+          "15m"
+        ]
+      ]
+    },
+    {
+      "id": "Azumatt-AzuExtendedPlayerInventory",
+      "display": "AzuExtendedPlayerInventory",
+      "category": "인벤토리/UI",
+      "tags": [
+        "인벤토리",
+        "장비슬롯",
+        "퀵슬롯"
+      ],
+      "iconUrl": "https://gcdn.thunderstore.io/live/repository/icons/Azumatt-AzuExtendedPlayerInventory-2.4.1.png.128x128_q95.png",
+      "link": "https://thunderstore.io/c/valheim/p/Azumatt/AzuExtendedPlayerInventory/",
+      "desc": "인벤토리, 장비 슬롯, 퀵슬롯을 확장합니다.",
+      "effect": "인벤토리가 2줄 늘어나고, 장비칸/퀵슬롯 4개/위시본·위습라이트 전용 슬롯을 사용할 수 있습니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "Azumatt.AzuExtendedPlayerInventory.cfg"
+        ],
+        [
+          "추가 인벤토리 줄",
+          "2줄"
+        ],
+        [
+          "장비 전용 행",
+          "On"
+        ],
+        [
+          "장비 별도 패널",
+          "On"
+        ],
+        [
+          "자동 장착",
+          "On"
+        ],
+        [
+          "퀵슬롯",
+          "4개 / HUD 표시 On"
+        ],
+        [
+          "위시본 슬롯",
+          "On"
+        ],
+        [
+          "데미스터 슬롯",
+          "On"
+        ],
+        [
+          "퀵슬롯 키",
+          "Alt+Z, Alt+X, Alt+C, Alt+V"
+        ]
+      ]
+    },
+    {
+      "id": "shudnal-ItemStacksItemWeights",
+      "display": "ItemStacksItemWeights",
+      "category": "인벤토리/UI",
+      "tags": [
+        "스택",
+        "무게"
+      ],
+      "link": "https://thunderstore.io/c/valheim/p/shudnal/ItemStacksItemWeights/",
+      "desc": "아이템 스택 수량과 무게 배율을 조정합니다.",
+      "effect": "대부분 아이템은 2배로 쌓이고, 무게는 85%로 줄어 운반 부담이 완화됩니다. 용의 알은 1개 스택 유지입니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "shudnal.ItemStacksItemWeights.cfg / .yml"
+        ],
+        [
+          "서버 설정 잠금",
+          "true"
+        ],
+        [
+          "전역 스택 배율",
+          "2배"
+        ],
+        [
+          "전역 무게 배율",
+          "0.85배"
+        ],
+        [
+          "용의 알 스택",
+          "1개 유지"
+        ],
+        [
+          "원래 스택 보기",
+          "LeftAlt"
+        ]
+      ]
+    },
+    {
+      "id": "Searica-SkilledCarryWeight",
+      "display": "SkilledCarryWeight",
+      "category": "인벤토리/UI",
+      "tags": [
+        "무게",
+        "스킬",
+        "카트"
+      ],
+      "link": "https://thunderstore.io/c/valheim/p/Searica/SkilledCarryWeight/",
+      "desc": "특정 스킬 성장에 따라 소지 무게와 카트 체감 무게를 조정합니다.",
+      "effect": "달리기/점프/은신/수영/곡괭이/벌목/승마 스킬이 오를수록 운반 능력이 좋아집니다. 카트도 최대 70%까지 가벼워질 수 있습니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "Searica.Valheim.SkilledCarryWeight.cfg"
+        ],
+        [
+          "적용 스킬",
+          "Jump, Pickaxes, Ride, Run, Sneak, Swim, WoodCutting"
+        ],
+        [
+          "스킬 계수",
+          "0.25"
+        ],
+        [
+          "카트 무게 영향",
+          "On"
+        ],
+        [
+          "카트 최대 감소",
+          "70%"
+        ],
+        [
+          "카트 최소 기준 무게",
+          "300"
+        ],
+        [
+          "Quick Cart 키",
+          "G"
+        ],
+        [
+          "카트 부착 거리",
+          "5m"
+        ]
+      ]
+    },
+    {
+      "id": "shudnal-MyLittleUI",
+      "display": "MyLittleUI",
+      "category": "인벤토리/UI",
+      "tags": [
+        "UI",
+        "툴팁",
+        "정보"
+      ],
+      "link": "https://thunderstore.io/c/valheim/p/shudnal/MyLittleUI/",
+      "desc": "툴팁, 시간, 날씨, 바람, 인벤토리 정보 등 UI 표시를 개선합니다.",
+      "effect": "상자 내용 11줄, 제련/요리/작물/테이밍 시간, 24시간제 게임 시간, 예보/바람, 무게/슬롯, 품질 별표와 내구도 색상이 표시됩니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "shudnal.MyLittleUI.cfg"
+        ],
+        [
+          "서버 설정 잠금",
+          "true"
+        ],
+        [
+          "상자 이름/내용 표시",
+          "On / 11줄"
+        ],
+        [
+          "제련기 정보",
+          "예상 시간, 연료, 대기열 표시"
+        ],
+        [
+          "작물/벌통/요리/테이밍",
+          "진행 정보 표시"
+        ],
+        [
+          "시간 표시",
+          "게임 시간 24h"
+        ],
+        [
+          "예보/바람 표시",
+          "On"
+        ],
+        [
+          "인벤토리 정보",
+          "현재 무게/슬롯 표시"
+        ],
+        [
+          "아이템 품질",
+          "★ 표시"
+        ],
+        [
+          "수리",
+          "홀드 수리 On"
+        ]
+      ]
+    },
+    {
+      "id": "OdinPlus-TeleportEverything",
+      "display": "TeleportEverything",
+      "category": "이동/지도",
+      "tags": [
+        "포탈",
+        "이동",
+        "운반"
+      ],
+      "link": "https://thunderstore.io/c/valheim/p/OdinPlus/TeleportEverything/",
+      "desc": "포탈 이동 시 아이템, 가축, 카트 운반 제한을 완화합니다.",
+      "effect": "광석과 용의 알을 포탈로 옮길 수 있고, 멧돼지/늑대/록스 및 카트도 조건에 따라 함께 이동합니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "com.kpro.TeleportEverything.cfg"
+        ],
+        [
+          "모드 활성화",
+          "true"
+        ],
+        [
+          "서버 설정 강제",
+          "true"
+        ],
+        [
+          "포탈 활성 범위",
+          "5m"
+        ],
+        [
+          "운반 탐색 반경",
+          "10m"
+        ],
+        [
+          "운반 대상",
+          "멧돼지, 늑대, 록스"
+        ],
+        [
+          "카트 이동",
+          "Enabled"
+        ],
+        [
+          "광석 이동",
+          "true"
+        ],
+        [
+          "용의 알 이동",
+          "true"
+        ],
+        [
+          "운반 비용",
+          "10 / 용의 알은 비용 제외"
+        ]
+      ]
+    },
+    {
+      "id": "GemHunter1-FastTeleport",
+      "display": "FastTeleport",
+      "category": "이동/지도",
+      "tags": [
+        "포탈",
+        "로딩",
+        "연출"
+      ],
+      "link": "https://thunderstore.io/c/valheim/p/GemHunter1/FastTeleport/",
+      "desc": "포탈/던전 이동 대기 체감을 줄여주는 이동 편의 모드입니다.",
+      "effect": "빠른 이동 기능은 켜져 있으며, 화면 암전과 포탈 소용돌이 연출은 숨기지 않고 유지합니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "GemHunter1.FastTeleport.cfg"
+        ],
+        [
+          "모드 활성화",
+          "true"
+        ],
+        [
+          "카메라 암전 제거",
+          "false"
+        ],
+        [
+          "포탈 소용돌이 숨김",
+          "false"
+        ]
+      ]
+    },
+    {
+      "id": "Azumatt-Where_You_At",
+      "display": "Where You At",
+      "category": "이동/지도",
+      "tags": [
+        "지도",
+        "위치공유"
+      ],
+      "link": "https://thunderstore.io/c/valheim/p/Azumatt/Where_You_At/",
+      "desc": "플레이어 위치 공유를 제어합니다.",
+      "effect": "일반 유저가 공개 위치 토글을 끄지 못하게 되어, 팀원 위치 확인이 안정적으로 유지됩니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "Azumatt.WhereYouAt.cfg"
+        ],
+        [
+          "서버 설정 잠금",
+          "On"
+        ],
+        [
+          "공개 토글 방지",
+          "On"
+        ],
+        [
+          "관리자 예외",
+          "On"
+        ],
+        [
+          "와드 안에서 끄기",
+          "Off"
+        ]
+      ]
+    },
+    {
+      "id": "nbusseneau-Better_Cartography_Table",
+      "display": "Better Cartography Table",
+      "category": "이동/지도",
+      "tags": [
+        "지도",
+        "핀",
+        "공유"
+      ],
+      "link": "https://thunderstore.io/c/valheim/p/nbusseneau/Better_Cartography_Table/",
+      "desc": "카토그래피 테이블의 지도/핀 공유 기능을 개선합니다.",
+      "effect": "현재 업로드된 config에는 별도 설정 파일이 없어서 기본값 기준으로 안내합니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "config.zip에 별도 파일 없음"
+        ],
+        [
+          "적용 방식",
+          "프로필 포함 / 기본 설정 사용"
+        ],
+        [
+          "유저 안내",
+          "지도 공유 관련 기능은 서버에서 테스트 후 필요 시 설정 추가"
+        ]
+      ]
+    },
+    {
+      "id": "Advize-PlantEverything",
+      "display": "PlantEverything",
+      "category": "건축/농사",
+      "tags": [
+        "농사",
+        "꾸미기",
+        "식물"
+      ],
+      "link": "https://thunderstore.io/c/valheim/p/Advize/PlantEverything/",
+      "desc": "더 많은 식물, 나무, 자연물을 배치할 수 있게 해줍니다.",
+      "effect": "기지 꾸미기와 농장 확장이 쉬워집니다. 식물 타이머가 켜져 있어 성장/재생 상태를 확인하기 좋습니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "advize.PlantEverything.cfg"
+        ],
+        [
+          "서버 설정 잠금",
+          "true"
+        ],
+        [
+          "기타 식물/잔해",
+          "EnableMiscFlora = true / EnableDebris = true"
+        ],
+        [
+          "추가 자원",
+          "false"
+        ],
+        [
+          "어디든 설치",
+          "false"
+        ],
+        [
+          "바이옴 강제",
+          "EnforceBiomes = false / Vanilla = true"
+        ],
+        [
+          "보호 필요",
+          "PlantsRequireShielding = true"
+        ],
+        [
+          "적 공격 대상",
+          "Crops/Pieces = true"
+        ],
+        [
+          "타이머 표시",
+          "Pickable/Plant Timers = true"
+        ],
+        [
+          "작물 성장 시간",
+          "4000~5000초"
+        ],
+        [
+          "나무 성장 시간",
+          "대부분 3000초"
+        ]
+      ]
+    },
+    {
+      "id": "NotActuallyMine-FloorsAreRoofs",
+      "display": "FloorsAreRoofs",
+      "category": "건축/농사",
+      "tags": [
+        "건축",
+        "지붕",
+        "비피해"
+      ],
+      "link": "https://thunderstore.io/c/valheim/p/NotActuallyMine/FloorsAreRoofs/",
+      "desc": "바닥 구조물을 지붕처럼 판정해 건축 자유도를 높입니다.",
+      "effect": "평평한 지붕 형태를 만들기 쉬워지고, 비 피해 제거 설정이 켜져 있습니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "bonesbro.val.floorsareroofs.cfg"
+        ],
+        [
+          "비 피해 제거",
+          "RemoveRainDamage = true"
+        ]
+      ]
+    },
+    {
+      "id": "Azumatt-SleepSkip",
+      "display": "SleepSkip",
+      "category": "생존/이벤트/소셜",
+      "tags": [
+        "수면",
+        "멀티"
+      ],
+      "link": "https://thunderstore.io/c/valheim/p/Azumatt/SleepSkip/",
+      "desc": "멀티플레이에서 일부 인원만 자도 밤을 넘길 수 있게 합니다.",
+      "effect": "접속자 50% 또는 최소 1명이 수면 조건을 만족하면 밤 넘기기가 진행됩니다. 투표/확인 대기 시간이 있습니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "Azumatt.SleepSkip.cfg"
+        ],
+        [
+          "서버 설정 잠금",
+          "On"
+        ],
+        [
+          "필요 비율",
+          "50%"
+        ],
+        [
+          "최소 필요 인원",
+          "1명"
+        ],
+        [
+          "경고 시간",
+          "15초"
+        ],
+        [
+          "투표 제한 시간",
+          "45초"
+        ],
+        [
+          "수면 쿨다운",
+          "0초"
+        ],
+        [
+          "팝업 자동 선택",
+          "Ask"
+        ]
+      ]
+    },
+    {
+      "id": "MidnightMods-Deathlink",
+      "display": "Deathlink",
+      "category": "생존/이벤트/소셜",
+      "tags": [
+        "사망",
+        "패널티",
+        "캐주얼"
+      ],
+      "link": "https://thunderstore.io/c/valheim/p/MidnightMods/Deathlink/",
+      "desc": "사망 시 장비/스킬/보상 관련 규칙을 조정합니다.",
+      "effect": "현재 캐릭터 설정은 Casual입니다. 사망 시 장비 3개 보존, 스킬 손실 2~5%, 사망 마커 표시 기준으로 정리했습니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "MidnightsFX.Deathlink.cfg / Deathlink/*.yaml"
+        ],
+        [
+          "현재 선택지",
+          "Casual"
+        ],
+        [
+          "장비 보존",
+          "minEquipmentKept = 3 / maxEquipmentKept = 3"
+        ],
+        [
+          "스킬 손실",
+          "2% ~ 5%"
+        ],
+        [
+          "음식 손실",
+          "true"
+        ],
+        [
+          "아이템 처리",
+          "DeathlinkBased / 보존 아이템은 Tombstone"
+        ],
+        [
+          "사망 마커",
+          "true"
+        ],
+        [
+          "킬 스킬 보상",
+          "일반 5 / 보스 20"
+        ],
+        [
+          "제작/채집/건축 보상",
+          "0.8 / 0.1 / 0.5"
+        ]
+      ]
+    },
+    {
+      "id": "ASharpPen-Custom_Raids",
+      "display": "Custom Raids",
+      "category": "생존/이벤트/소셜",
+      "tags": [
+        "레이드",
+        "이벤트"
+      ],
+      "link": "https://thunderstore.io/c/valheim/p/ASharpPen/Custom_Raids/",
+      "desc": "레이드 발생 조건과 주기를 조정합니다.",
+      "effect": "레이드는 46분마다 체크하며, 기본 발생 확률은 15%입니다. 오프라인 상태에서는 이벤트 타이머가 멈춥니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "custom_raids.cfg / supplemental cfg"
+        ],
+        [
+          "기존 레이드 제거",
+          "false"
+        ],
+        [
+          "동명 이벤트 덮어쓰기",
+          "true"
+        ],
+        [
+          "레이드 체크 간격",
+          "46분"
+        ],
+        [
+          "레이드 확률",
+          "15%"
+        ],
+        [
+          "개별 레이드 체크",
+          "false"
+        ],
+        [
+          "최소 레이드 간격",
+          "46분"
+        ],
+        [
+          "오프라인 타이머 정지",
+          "true"
+        ],
+        [
+          "DeathsquitoSeason",
+          "Enabled = false"
+        ],
+        [
+          "Ragnarok",
+          "Enabled = false"
+        ]
+      ]
+    },
+    {
+      "id": "ValheimValkream-EmoteWheelReworked",
+      "display": "EmoteWheelReworked",
+      "category": "생존/이벤트/소셜",
+      "tags": [
+        "이모트",
+        "소셜"
+      ],
+      "link": "https://thunderstore.io/c/valheim/p/ValheimValkream/EmoteWheelReworked/",
+      "desc": "이모트 휠 UI와 입력 방식을 개선합니다.",
+      "effect": "T 키를 눌러 이모트 휠을 열고, 키를 놓으면 선택한 이모트가 실행됩니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "dzk.valheim.emotewheelreworked.cfg"
+        ],
+        [
+          "모드 활성화",
+          "true"
+        ],
+        [
+          "단축키",
+          "T"
+        ],
+        [
+          "키 놓을 때 실행",
+          "true"
+        ],
+        [
+          "클릭 실행",
+          "false"
+        ],
+        [
+          "UI 크기",
+          "0.75"
+        ],
+        [
+          "강조 색상",
+          "FFD100FF"
+        ],
+        [
+          "게임패드 키",
+          "JoystickButton2"
+        ]
+      ]
+    },
+    {
+      "id": "Balrond-balrond_character_customization",
+      "display": "balrond character customization",
+      "category": "캐릭터 커스텀",
+      "tags": [
+        "캐릭터",
+        "외형",
+        "커스터마이징"
+      ],
+      "link": "https://thunderstore.io/c/valheim/p/Balrond/balrond_character_customization/",
+      "desc": "캐릭터 생성/미용 UI를 확장해 더 세밀한 외형 편집을 지원합니다.",
+      "effect": "머리, 색상, 체형 등 캐릭터 외형 선택지가 늘어납니다. 모든 참여자 설치 권장입니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "config.zip에는 번역 파일만 포함"
+        ],
+        [
+          "적용 방식",
+          "프로필에 모드 추가"
+        ],
+        [
+          "유저 안내",
+          "외형 데이터 손상 방지를 위해 참여자 전원 설치 권장"
+        ]
+      ]
+    },
+    {
+      "id": "ComfyMods-DyeHard",
+      "display": "DyeHard",
+      "category": "캐릭터 커스텀",
+      "tags": [
+        "염색",
+        "머리",
+        "수염"
+      ],
+      "iconUrl": "https://gcdn.thunderstore.io/live/repository/icons/ComfyMods-DyeHard-1.6.0.png.128x128_q95.png",
+      "link": "https://thunderstore.io/c/valheim/p/ComfyMods/DyeHard/",
+      "desc": "캐릭터 머리/수염 타입과 색상을 클라이언트에서 조정합니다.",
+      "effect": "F1 ConfigurationManager에서 DyeHard 설정을 열어 머리와 수염 색상/스타일을 바꿀 수 있습니다.",
+      "settings": [
+        [
+          "설정 출처",
+          "config.zip에 별도 DyeHard cfg 없음"
+        ],
+        [
+          "적용 방식",
+          "프로필에 모드 추가"
+        ],
+        [
+          "사용 방법",
+          "F1 → ConfigurationManager → DyeHard"
+        ],
+        [
+          "주의",
+          "외형 표시용이며 플레이어 데이터 자체를 직접 변경하지 않는 방식"
+        ]
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "name": "Badgers Shading Overhaul",
+      "tag": "Shader",
+      "link": "https://www.nexusmods.com/valheim/mods/2366",
+      "desc": "조명/렌더링의 거친 색 띠를 줄이고 자연스러운 분위기를 만드는 셰이더 개선 패치입니다.",
+      "install": "압축 해제 후 내용물을 r2modman 프로필의 BepInEx/plugins 폴더에 넣습니다.",
+      "path": "%APPDATA%\\r2modmanPlus-local\\Valheim\\profiles\\<프로필명>\\BepInEx\\plugins"
+    },
+    {
+      "name": "Willybach’s HD Valheim 2.0",
+      "tag": "Texture",
+      "link": "https://www.nexusmods.com/valheim/mods/1030",
+      "desc": "바닐라 분위기를 유지하면서 전반적인 텍스처를 고해상도로 바꿉니다.",
+      "install": "압축 해제 후 Custom Textures 폴더를 HDValheimTexturesData 아래에 넣습니다.",
+      "path": "%APPDATA%\\r2modmanPlus-local\\Valheim\\profiles\\<프로필명>\\BepInEx\\plugins\\HDValheimTexturesData\\Custom Textures"
+    },
+    {
+      "name": "Badgers HD Terrain 2.0",
+      "tag": "Terrain",
+      "link": "https://www.nexusmods.com/valheim/mods/2887",
+      "desc": "지형 텍스처와 바이옴 블렌딩, 날씨/조명 표현을 개선합니다.",
+      "install": "압축 해제 후 ValheimHDTerrain.dll과 HDTerrainData 폴더가 BepInEx/plugins 안에 들어가게 배치합니다.",
+      "path": "%APPDATA%\\r2modmanPlus-local\\Valheim\\profiles\\<프로필명>\\BepInEx\\plugins"
+    },
+    {
+      "name": "Seasonality",
+      "tag": "Season",
+      "link": "https://thunderstore.io/c/valheim/p/RustyMods/Seasonality/",
+      "desc": "인게임 시간에 따라 계절 색감과 텍스처 변화를 적용합니다.",
+      "install": "r2modman 프로필에 기능 모드로 설치합니다. 텍스처 팩은 아래 Textures 경로에 배치합니다.",
+      "path": "%APPDATA%\\r2modmanPlus-local\\Valheim\\profiles\\<프로필명>\\BepInEx\\config\\Seasonality\\Textures"
+    },
+    {
+      "name": "Seasonality HD Texture Pack",
+      "tag": "Season Texture",
+      "link": "https://thunderstore.io/c/valheim/p/RustyMods/Seasonality_HD_Texture_Pack/",
+      "desc": "Seasonality가 사용할 HD 텍스처 팩입니다.",
+      "install": "텍스처 파일 경로가 BepInEx/config/Seasonality/Textures가 되도록 배치합니다.",
+      "path": "%APPDATA%\\r2modmanPlus-local\\Valheim\\profiles\\<프로필명>\\BepInEx\\config\\Seasonality\\Textures"
+    },
+    {
+      "name": "Willybachs HD Seasonality",
+      "tag": "Season HD",
+      "link": "https://www.nexusmods.com/valheim/mods/2635",
+      "desc": "Willybach HD Valheim과 Seasonality를 함께 쓰기 위한 계절별 HD 텍스처입니다.",
+      "install": "압축 안의 WillybachHD 텍스처 폴더를 Seasonality Textures 폴더 아래에 배치합니다. 포함된 Seasonality 설정 파일이 있다면 BepInEx/config에 적용합니다.",
+      "path": "%APPDATA%\\r2modmanPlus-local\\Valheim\\profiles\\<프로필명>\\BepInEx\\config\\Seasonality\\Textures\\WillybachHD"
+    }
+  ]
+}
